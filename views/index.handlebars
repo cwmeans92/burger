@@ -1,0 +1,90 @@
+<header>
+ <div class="row">
+    {{!-- <div class="col-3">
+    </div> --}}
+    <div class="col-12">
+      <div class="mainhead">
+        <h1>Burger App</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+ 
+  <br>
+  <div class="row">
+    <div class="col-3">
+      <img
+        src="https://image.freepik.com/free-vector/cartoon-tasty-big-hamburger-with-cheese-sesame-seeds_75817-125.jpg"
+        alt="pic of burger">
+    </div>
+
+    <div class="col-6">
+      <h2>Add Burger!</h2>
+      <form class="create-form">
+
+        <div class="form-group">
+          <label for="burger">Burger Name:</label>
+          <input type="text" id="burger" name="name">
+        </div>
+
+        <div class="form-group">
+          <label for="devoured">Is The Burger Devoured?</label><br>
+          <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+          <input type="radio" name="devoured" value="0"> Still Available
+        </div>
+
+        <button type="button" class="submit btn btn-secondary">Add Burger</button>
+      </form>
+    </div>
+
+    <div class="col-3">
+      <img
+        src="https://image.freepik.com/free-vector/cartoon-tasty-big-hamburger-with-cheese-sesame-seeds_75817-125.jpg"
+        alt="pic of burger">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-5">
+
+      <h2>Burgers Available!</h2>
+      <div class="burgers-available">
+        <ol>
+          {{#each burgers}}
+          {{#unless devoured}}
+          {{> burgers/burger-block devoured=true}}
+          {{/unless}}
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+    <div class="col-2"></div>
+
+    <div class="col-5">
+      <h2>Devoured Burgers!</h2>
+      <div class="burgers-devoured">
+        <ol>
+          {{#each burgers}}
+          {{#if devoured}}
+          {{> burgers/burger-block devoured=false}}
+          {{/if}}
+          {{/each}}
+        </ol>
+      </div>
+    </div>
+
+  </div>
+  <br> <br>
+
+  <div class="row">
+    <div class="col-12">
+      <footer class="text-center">
+        Copyright &copy;
+      </footer>
+    </div>
+  </div>
+
+</div>
