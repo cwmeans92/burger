@@ -1,24 +1,24 @@
 {
     "development": {
       "username": "root",
-      "password": "Nirvana5430",
-      "database": "blogger",
+      "password": "PPass1215!",
+      "database": "burgers_db",
       "host": "127.0.0.1",
       "port": 3306,
       "dialect": "mysql"
     },
     "test": {
       "username": "root",
-      "password": "Nirvana5430",
-      "database": "database_test",
+      "password": "PPass1215!",
+      "database": "burgers_db",
       "host": "127.0.0.1",
       "port": 3306,
       "dialect": "mysql"
     },
     "production": {
       "username": "root",
-      "password": "Nirvana5430",
-      "database": "database_production",
+      "password": "PPass1215!",
+      "database": "burgers_db",
       "host": "127.0.0.1",
       "port": 3306,
       "dialect": "mysql"

@@ -1,10 +1,6 @@
-INSERT INTO burgers (burger_name, devoured) VALUES ('The Griffin', true);
-
-INSERT INTO burgers (burger_name, devoured) VALUES ('The Maggie', true);
-
-INSERT INTO burgers (burger_name, devoured) VALUES ('The Sarah', false);
-
-INSERT INTO burgers (burger_name, devoured) VALUES ('The Bootcamp', true);
-
-INSERT INTO burgers (burger_name, devoured) VALUES ('The Eloise', false);
-
+INSERT INTO burgers (burger_name, devoured) VALUES ('Cheese Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Hamburger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Pizza Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Bacon Burger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('NotABurger', FALSE);
+INSERT INTO burgers (burger_name, devoured) VALUES ('Taco Burger', FALSE);

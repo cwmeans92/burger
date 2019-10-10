@@ -1,8 +1,6 @@
 
 body{
     font-family: 'Bree Serif', serif;
-    /* font-family: 'Open Sans', sans-serif; */
-    /* background-color:#f5cb58; */
     background-color:#7ae3db;
     font-weight:bold;
     font-size:20px;
@@ -26,10 +24,6 @@ h2,h1{
  
 }
 
-/* h1{
-text-decoration:underline;
-
-} */
 .burgers-available, .burgers-devoured{
     font-size:18px;
 }
